@@ -26,16 +26,16 @@ class calculator
     		head=head->next;
     		pre=head;
     	}
-    }   //Îö¹¹º¯Êı
+    }   //ææ„å‡½æ•°
     void links(int a,double *);
-    void create(int a);//´´½¨Á´±í
-    void input(double *);//ÊäÈëº¯Êı
-    void outs();//Êä³öº¯Êı
-    void order();//ÅÅĞò
-    void add(struct item *a,struct item *b); //¼Ó²Ù×÷
-    void jian(struct item *a,struct item *b);//¼õ 
+    void create(int a);//åˆ›å»ºé“¾è¡¨
+    void input(double *);//è¾“å…¥å‡½æ•°
+    void outs();//è¾“å‡ºå‡½æ•°
+    void order();//æ’åº
+    void add(struct item *a,struct item *b); //åŠ æ“ä½œ
+    void jian(struct item *a,struct item *b);//å‡ 
 	struct item * node(){return head;	}; 
-	void insert(double cof1,double exp1);//²åÈë 
+	void insert(double cof1,double exp1);//æ’å…¥ 
     
 };
 void calculator::links(int a, double * line)
@@ -50,7 +50,7 @@ void calculator::create(int d)
     num_of=numoflink=d;
     if(numoflink<=0)
     {
-    	cout<<"ÊäÈë´íÎó£¬ÍË³ö"<<endl;
+    	cout<<"è¾“å…¥é”™è¯¯ï¼Œé€€å‡º"<<endl;
     	exit(1);
     }
     numoflink++;
@@ -293,8 +293,3 @@ int main ()
     }
 	return 0;
 }
-
-
-
-77777777777777777777777
-dddddddddddddddd
