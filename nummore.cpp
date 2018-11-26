@@ -23,12 +23,12 @@ class calculator
     		head=pre;
     		pre=pre->next;
     	}
-    }   //ææ„å‡½æ•°
+    }   //Îö¹¹º¯Êı
     void links();
-    void create();//åˆ›å»ºé“¾è¡¨
-    void input();//è¾“å…¥ä¿¡æ¯
-    void outs();//è¾“å‡ºä¿¡æ¯
-    void order();//æ’åº
+    void create();//´´½¨Á´±í
+    void input();//ÊäÈëº¯Êı
+    void outs();//Êä³öº¯Êı
+    void order();//ÅÅĞò
 };
 void calculator::links()
 {
@@ -40,10 +40,11 @@ void calculator::links()
 void calculator::create()
 {
     int numoflink;
-    cout<<"ÇëÊäÈëÏîÊı";
+    cout<<"ÇëÊäÈëÏîÊı:";
+    cin>>numoflink;
     if(numoflink<=0)
     {
-    	cout<<"è¾“å…¥é”™è¯¯"<<endl;
+    	cout<<"ÊäÈë´íÎó£¬ÍË³ö"<<endl;
     	exit(1);
     }
     cin>>numoflink;
@@ -77,9 +78,9 @@ void calculator::input()
 	int counter=0;
 	while(a!=NULL)
 	{
-		cout<<"ç¬¬"<<counter+1<<"é¡¹çš„ç³»æ•°ï¼š";
+		cout<<"µÚ"<<counter+1<<"ÏîµÄÏµÊı";
 		cin>>a->cof;
-		cout<<"ç¬¬"<<counter+1<<"é¡¹çš„æŒ‡æ•°ï¼š";
+		cout<<"µÚ"<<counter+1<<"ÏîµÄÖ¸Êı";
 		cin>>a->exp;
 		a=a->next;
 	}
