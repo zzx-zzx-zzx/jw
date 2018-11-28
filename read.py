@@ -27,10 +27,7 @@ def show_list(list):
     while len(list)!=0:
         j=(min(list))
         num=Find(list,j[0])
-        print(" ",j[0],"     ",list[num][2])
+        print(str(j[0]).center(4),str(list[num][2]).center(10))
         list.remove(list[num])
     print("\n")
     
-
-
-
