@@ -31,3 +31,6 @@ def show_list(list):
         list.remove(list[num])
     print("\n")
     
+
+
+dkjgfksjgd
