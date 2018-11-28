@@ -1,5 +1,6 @@
 ﻿def add_line():
     r = open("text.txt", "a")
+    print("熊于棚")
     while 1:
         a=input("输入边节点号:")
         b=input("输入边节点号:")
