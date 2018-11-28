@@ -27,11 +27,7 @@ def show_list(list):
     while len(list)!=0:
         j=(min(list))
         num=Find(list,j[0])
-<<<<<<< HEAD
         print(" ",j[0],"     ",list[num][2])
-=======
-        print(" ",j[0],"    ",list[num][2])
->>>>>>> f1878517adabd9ebb7262912fb19590c3021a725
         list.remove(list[num])
     print("\n")
     
