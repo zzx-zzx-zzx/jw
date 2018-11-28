@@ -12,9 +12,13 @@ def delect_point(point):
         if n==len(point):
             break
     n=0
+    r.writelines(str(point[n][0])+'\n')
+    r.writelines(str(point[n][1])+'\n')
+    r.writelines(str(point[n][2]))
+    n=n+1
     while n!=len(point):
-        r.writelines(str(point[n][0])+'\n')
+        r.writelines('\n'+str(point[n][0])+'\n')
         r.writelines(str(point[n][1])+'\n')
-        r.writelines(str(point[n][2])+'\n')
+        r.writelines(str(point[n][2]))
         n=n+1
     r.close()      
